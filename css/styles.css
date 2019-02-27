@@ -1,0 +1,126 @@
+/* Styles for Louis Wood's personal web site */
+/*********************************************************
+1. Universal styles (typography, floats, etc.)
+2. Header & Nav styles
+3. Main Body Content
+4. Footer Content
+5. Media Queries
+*********************************************************/
+
+/* 1. Universal Styles */
+@import url('https://fonts.googleapis.com/css?family=Gentium+Basic|PT+Sans+Narrow');
+html { font-size: 100%; }     /* 16px default */
+body {
+	margin: auto;
+	padding: 0 30px 0;
+	font-family: 'Gentium Basic', serif;
+	font-size: 112.5%;    /* 18px default, but accessible */
+	line-height: 1.5;
+	color: black;
+    max-width: 750px;
+}
+
+/* 2. Header & Nav Styles */
+h1 {
+    margin: 5rem 0;
+	font-family: 'PT Sans Narrow';
+	font-size: 3.5rem;
+	line-height: 1.1;
+    text-align: center;
+}
+
+/* 3. Main Body Content */
+main img {
+    max-width: 50%;
+    height: auto;
+    margin: 0 30px 15px 0;
+    float: left;
+}
+a {
+    color: #007eff;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+a:hover { box-shadow: 0 4px 8px 2px hsla(0, 0%, 70%, .6); }
+a:visited { color: #007eff; }
+
+/* 4. Footer Content */
+footer {
+    margin: 30px 0px 20px;
+    position: relative;
+}
+footer label {
+    font-size: .9rem;
+    font-weight: bold;
+}
+input {
+    font: inherit;
+    font-size: 1rem;
+    width: 20em;
+    margin-bottom: 10px;
+}
+label, input { display: block; }
+button {
+    width: 10rem;
+    height: 2rem;
+    margin: 10px 0px 0px;
+}
+footer div:nth-child(2) {
+    position: absolute;
+    top: 0.5rem;
+    left: 22rem;
+    color: red;
+    max-height: 16rem;
+    overflow:auto
+}
+footer div:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-weight: bold;
+    text-align: right;
+    line-height: 1.3em;
+}
+ul {
+    padding: 0;
+    font-size: 1rem;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+/* 5. Media Queries */
+@media screen and (max-width: 590px) {
+    /* Footer */
+    footer div:nth-child(2) {
+        position: static;
+        margin: 10px 0 0;
+    }
+    footer div:last-child {
+        position: static;
+        text-align: left;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 525px) {
+    /* Header */
+    h1 {
+        margin: 4rem 0;
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 465px) {
+    /* Header */
+    h1 {
+        margin: 2.5rem 0;
+        font-size: 2rem;
+    }
+    /* Body */
+    body {
+        padding: 0 20px 0;
+        font-size: 1rem;
+    }
+    /* Footer */
+    input {
+        width: 15rem;
+    }
+}

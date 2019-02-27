@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Personal web page for Louis E. Wood">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Louis Wood's Personal Site</title>
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1.cupertino/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131548689-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131548689-1');
+    </script>
+</head>
+
+<body>
+    <header role="banner">
+        <h1>Who says coding is a<br>young person's game?</h1>
+    </header>
+    
+    <main role="main">
+       
+        <img src="assets/portrait.jpg" alt="Portrait of Louis">
+        
+        <article>
+           
+            <p>
+                Hello, my name is Louis Wood. As you can see, I’m not your typical applicant for a 
+                web developer position. I’m no spring chicken, but I hope to convince you that this 
+                may work to your advantage. I began my career in IT using code (Visual Basic, BATch 
+                files, and the like) to solve problems for a financial services firm in the days when 
+                dial-up was a thing. I have held positions of increasing responsibility at two major 
+                regional banks, including managing a team of engineers responsible for 1,000 servers 
+                and more than 6,500 desktop and laptop PCs. But in the last recession, as banks were 
+                either consolidating or failing, my employer was taken over by the F.D.I.C., and 
+                along with hundreds of other employees I was shown the door with a very sincere "sorry". 
+            </p>
+            
+            <p>
+                My interest has turned to web development. I’ve always been more comfortable as a 
+                problem solver than a manager, and I loved getting back to coding. While I had some 
+                new languages to learn, the core skills of identifying and specifying requirements and 
+                translating these into a digital solution were still alive and well. I put my nose to 
+                the grindstone and have now completed more than a dozen courses in PHP, MySQL, HTML, 
+                CSS, JavaScript, jQuery, AJAX, and related topics. I put these new tools to work 
+                developing 
+                <a href="https://www.daytradeanalytics.com" title="Link to Day Trade Analytics home page" 
+                target="_blank">Day&nbsp;Trade&nbsp;Analytics</a>, 
+                a robust web app for day traders. Take a look; I think you’ll like what you see. 
+            </p>
+            
+            <p>
+                That brings me to what I desire in the way of employment. I am self-directed and 
+                very serious about anything I put my mind to. I am happy back in the 
+                problem-solving-with-code business, but I realize that the best way to hone my skills 
+                and to achieve the level of expertise that I desire is to work with a production team. 
+                I am a dedicated employee and passionate about web development... what I need is to 
+                join a team that will allow me to continue to learn while performing meaningful work. 
+                If you would like to know more about my background you can see my resume 
+                <a href="assets/louis_wood_resume.pdf" title="Link to my resume" target="_blank">here</a>. 
+            </p>
+            
+            <p>
+                Since you have read this far you must be at least a little interested and I would love 
+                to talk with you. Please either leave your contact information and I will contact you, 
+                or you can contact me at the email address or phone number below. Thank you! 
+            </p>
+        </article>
+    
+    </main>
+    
+    <footer role="contentinfo">
+        
+        <div>
+            <label for="name">Name</label>
+            <input id="name" autofocus>
+            
+            <label for="company">Company</label>
+            <input id="company">
+            
+            <label for="phone">Phone</label>
+            <input id="phone">
+        
+            <label for="email">E-mail</label>
+            <input id="email">
+            
+            <label for="date">Date You Want Me To Call or Email</label>
+            <input id="date" placeholder="Leave blank for ASAP">
+
+            <button>Send Email</button>
+        </div>
+        
+        <div></div>        <!--Target areea for validation error messages-->
+        
+        <div style="clear: both">
+            Louis E. Wood<br>
+            334.538.0820<br>
+            Louis@iWoodCode.com
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.12.1.cupertino/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <script>
+        $("document").ready(function() {
+            $("#date").datepicker();
+            initListener();
+        });
+    </script>
+        
+</body>
+</html>
